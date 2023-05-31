@@ -1,0 +1,75 @@
+[ @file = "C:\Users\Sylvain\git\Flashlight\source\FlashlightApp.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "C:\Users\Sylvain\git\Flashlight\source\FlashlightApp.mc"; @line = 2; ]
+import Toybox.Background;
+[ @file = "C:\Users\Sylvain\git\Flashlight\source\FlashlightApp.mc"; @line = 3; ]
+import Toybox.Lang;
+[ @file = "C:\Users\Sylvain\git\Flashlight\source\FlashlightApp.mc"; @line = 4; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\Sylvain\git\Flashlight\source\FlashlightApp.mc"; @line = 7; ]
+class FlashlightApp extends Application.AppBase{
+    [ @file = "C:\Users\Sylvain\git\Flashlight\source\FlashlightApp.mc"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Sylvain\git\Flashlight\source\FlashlightApp.mc"; @line = 7; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Sylvain\git\Flashlight\source\FlashlightApp.mc"; @line = 9; ]
+    function initialize() as Void {
+C_Users_Sylvain_git_Flashlight_source_FlashlightApp_mc_9_26_start:
+[ "C:\Users\Sylvain\git\Flashlight\source\FlashlightApp.mc" 10 8 ]
+        %tmp.2 = getv ? :AppBase;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_Sylvain_git_Flashlight_source_FlashlightApp_mc_9_26_stop:
+    }
+    [ @file = "C:\Users\Sylvain\git\Flashlight\source\FlashlightApp.mc"; @line = 14; ]
+    function onStart(state as Dictionary or Null) as Void {
+    }
+    [ @file = "C:\Users\Sylvain\git\Flashlight\source\FlashlightApp.mc"; @line = 18; ]
+    function onStop(state as Dictionary or Null) as Void {
+    }
+    [ @file = "C:\Users\Sylvain\git\Flashlight\source\FlashlightApp.mc"; @line = 22; ]
+    function getInitialView() as Array<Views or InputDelegates> or Null {
+C_Users_Sylvain_git_Flashlight_source_FlashlightApp_mc_22_65_start:
+[ "C:\Users\Sylvain\git\Flashlight\source\FlashlightApp.mc" 23 8 ]
+        %tmp.1 = newa Array<Views or InputDelegates> 2;
+        %tmp.5 = getv ? :FlashlightView;
+        %tmp.2 = newc %tmp.5 ();
+        %tmp.6 = dup %tmp.1;
+        %tmp.7 = aputv %tmp.6 0 %tmp.2;
+        %tmp.11 = getv ? :FlashlightDelegate;
+        %tmp.8 = newc %tmp.11 ();
+        %tmp.12 = dup %tmp.7;
+        %tmp.13 = aputv %tmp.12 1 %tmp.8;
+        ret %tmp.13;
+C_Users_Sylvain_git_Flashlight_source_FlashlightApp_mc_22_65_stop:
+    }
+    [ @file = "C:\Users\Sylvain\git\Flashlight\source\FlashlightApp.mc"; @line = 26; glance = true; ]
+    function getGlanceView() {
+C_Users_Sylvain_git_Flashlight_source_FlashlightApp_mc_27_29_start:
+[ "C:\Users\Sylvain\git\Flashlight\source\FlashlightApp.mc" 28 8 ]
+        %tmp.1 = newa 1;
+        %tmp.5 = getv ? :GlanceView;
+        %tmp.2 = newc %tmp.5 ();
+        %tmp.6 = dup %tmp.1;
+        %tmp.7 = aputv %tmp.6 0 %tmp.2;
+        ret %tmp.7;
+C_Users_Sylvain_git_Flashlight_source_FlashlightApp_mc_27_29_stop:
+    }
+}
+[ @file = "C:\Users\Sylvain\git\Flashlight\source\FlashlightApp.mc"; @line = 32; ]
+function getApp() as FlashlightApp {
+C_Users_Sylvain_git_Flashlight_source_FlashlightApp_mc_32_35_start:
+[ "C:\Users\Sylvain\git\Flashlight\source\FlashlightApp.mc" 33 4 ]
+    %tmp.1 = getm $.Toybox.Application;
+    %tmp.2 = getv function %tmp.1 :getApp;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    %tmp.4 = as %tmp.3 FlashlightApp;
+    ret %tmp.4;
+C_Users_Sylvain_git_Flashlight_source_FlashlightApp_mc_32_35_stop:
+}
+[ @file = "C:\Users\Sylvain\git\Flashlight\source\FlashlightApp.mc"; @line = 1; ]
+<init> {
+}

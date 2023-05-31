@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<manifest filename="C:\Users\Sylvain\git\Flashlight\manifest.xml"/>
+<pcToLineNum>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightApp.mc" id="1" lineNum="7" parent="globals/FlashlightApp" pc="268435460" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightApp.mc" id="2" lineNum="14" parent="globals/FlashlightApp" pc="268435479" symbol="onStart"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightApp.mc" id="3" lineNum="22" parent="globals/FlashlightApp" pc="268435482" symbol="getInitialView"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightApp.mc" id="3" lineNum="23" parent="globals/FlashlightApp" pc="268435484" symbol="getInitialView"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightApp.mc" id="4" lineNum="9" parent="globals/FlashlightApp" pc="268435559" symbol="initialize"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightApp.mc" id="4" lineNum="10" parent="globals/FlashlightApp" pc="268435561" symbol="initialize"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightApp.mc" id="5" lineNum="26" parent="globals/FlashlightApp" pc="268435580" symbol="getGlanceView"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightApp.mc" id="5" lineNum="28" parent="globals/FlashlightApp" pc="268435582" symbol="getGlanceView"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightApp.mc" id="6" lineNum="18" parent="globals/FlashlightApp" pc="268435623" symbol="onStop"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightGlance.mc" id="7" lineNum="5" parent="globals/GlanceView" pc="268435626" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightGlance.mc" id="8" lineNum="11" parent="globals/GlanceView" pc="268435645" symbol="onLayout"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightGlance.mc" id="8" lineNum="12" parent="globals/GlanceView" pc="268435647" symbol="onLayout"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightGlance.mc" id="9" lineNum="7" parent="globals/GlanceView" pc="268435689" symbol="initialize"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightGlance.mc" id="9" lineNum="8" parent="globals/GlanceView" pc="268435691" symbol="initialize"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\bin\\gen\\006-B3703-00\\source\\Rez.mcgen" id="10" lineNum="8" parent="globals/GlanceRez" pc="268435710" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\bin\\gen\\006-B3703-00\\source\\Rez.mcgen" id="11" lineNum="19" parent="globals/GlanceRez/Layouts" pc="268435734" symbol="GlanceLayout"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\bin\\gen\\006-B3703-00\\source\\Rez.mcgen" id="11" lineNum="20" parent="globals/GlanceRez/Layouts" pc="268435746" symbol="GlanceLayout"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\bin\\gen\\006-B3703-00\\source\\Rez.mcgen" id="11" lineNum="22" parent="globals/GlanceRez/Layouts" pc="268435899" symbol="GlanceLayout"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightApp.mc" id="12" lineNum="32" parent="globals" pc="268435916" symbol="getApp"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightApp.mc" id="12" lineNum="33" parent="globals" pc="268435926" symbol="getApp"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightDelegate.mc" id="13" lineNum="3" parent="globals/FlashlightDelegate" pc="268435942" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightDelegate.mc" id="14" lineNum="5" parent="globals/FlashlightDelegate" pc="268435961" symbol="initialize"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightDelegate.mc" id="14" lineNum="6" parent="globals/FlashlightDelegate" pc="268435963" symbol="initialize"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightDelegate.mc" id="15" lineNum="19" parent="globals/FlashlightDelegate" pc="268435982" symbol="onTap"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightDelegate.mc" id="15" lineNum="20" parent="globals/FlashlightDelegate" pc="268435984" symbol="onTap"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightDelegate.mc" id="15" lineNum="21" parent="globals/FlashlightDelegate" pc="268436003" symbol="onTap"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightDelegate.mc" id="15" lineNum="22" parent="globals/FlashlightDelegate" pc="268436020" symbol="onTap"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightDelegate.mc" id="15" lineNum="24" parent="globals/FlashlightDelegate" pc="268436036" symbol="onTap"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightDelegate.mc" id="15" lineNum="26" parent="globals/FlashlightDelegate" pc="268436052" symbol="onTap"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightDelegate.mc" id="16" lineNum="9" parent="globals/FlashlightDelegate" pc="268436055" symbol="onSelect"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightDelegate.mc" id="16" lineNum="10" parent="globals/FlashlightDelegate" pc="268436057" symbol="onSelect"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightDelegate.mc" id="16" lineNum="11" parent="globals/FlashlightDelegate" pc="268436076" symbol="onSelect"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightDelegate.mc" id="16" lineNum="12" parent="globals/FlashlightDelegate" pc="268436093" symbol="onSelect"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightDelegate.mc" id="16" lineNum="14" parent="globals/FlashlightDelegate" pc="268436109" symbol="onSelect"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightDelegate.mc" id="16" lineNum="16" parent="globals/FlashlightDelegate" pc="268436125" symbol="onSelect"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightView.mc" id="17" lineNum="6" parent="globals/FlashlightView" pc="268436128" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightView.mc" id="18" lineNum="8" parent="globals/FlashlightView" pc="268436147" symbol="initialize"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightView.mc" id="18" lineNum="9" parent="globals/FlashlightView" pc="268436149" symbol="initialize"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightView.mc" id="19" lineNum="13" parent="globals/FlashlightView" pc="268436168" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightView.mc" id="19" lineNum="15" parent="globals/FlashlightView" pc="268436172" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightView.mc" id="19" lineNum="17" parent="globals/FlashlightView" pc="268436192" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightView.mc" id="19" lineNum="18" parent="globals/FlashlightView" pc="268436205" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightView.mc" id="19" lineNum="20" parent="globals/FlashlightView" pc="268436218" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightView.mc" id="19" lineNum="21" parent="globals/FlashlightView" pc="268436265" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightView.mc" id="19" lineNum="23" parent="globals/FlashlightView" pc="268436278" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightView.mc" id="19" lineNum="24" parent="globals/FlashlightView" pc="268436297" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\source\\FlashlightView.mc" id="19" lineNum="25" parent="globals/FlashlightView" pc="268436309" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\bin\\gen\\006-B3703-00\\source\\Rez.mcgen" id="20" lineNum="568" parent="globals/Rez" pc="268436336" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\bin\\gen\\006-B3703-00\\source\\Rez.mcgen" id="21" lineNum="580" parent="globals/Rez/Layouts" pc="268436360" symbol="GlanceLayout"/>
+<entry filename="C:\\Users\\Sylvain\\git\\Flashlight\\bin\\gen\\006-B3703-00\\source\\Rez.mcgen" id="21" lineNum="581" parent="globals/Rez/Layouts" pc="268436370" symbol="GlanceLayout"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry id="8389346" symbol="text"/>
+<entry id="20" method="true" symbol="GlanceLayout"/>
+<entry id="6" module="true" symbol="globals/GlanceRez/Layouts"/>
+<entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+<entry id="3" module="true" symbol="globals/GlanceRez/Drawables"/>
+<entry id="13" module="true" symbol="globals/Rez/Menus"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry id="5" module="true" symbol="globals/GlanceRez/JsonData"/>
+<entry field="true" id="23" symbol="AppName"/>
+<entry id="14" module="true" symbol="globals/Rez/Strings"/>
+<entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry id="15" object="true" symbol="FlashlightApp"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry id="8" module="true" symbol="globals/Rez"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry field="true" id="8389065" symbol="locY"/>
+<entry field="true" id="8389064" symbol="locX"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry id="8389348" symbol="font"/>
+<entry id="21" module="true" symbol="Menus"/>
+<entry id="8389275" method="true" symbol="getApp"/>
+<entry id="12" module="true" symbol="globals/Rez/Layouts"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry id="2" module="true" symbol="globals/GlanceRez"/>
+<entry id="16" object="true" symbol="FlashlightDelegate"/>
+<entry id="8389349" symbol="justification"/>
+<entry id="8389098" method="true" symbol="onTap"/>
+<entry id="11" module="true" symbol="globals/Rez/JsonData"/>
+<entry id="8391459" module="true" object="true" symbol="GlanceRez"/>
+<entry id="9" module="true" symbol="globals/Rez/Drawables"/>
+<entry id="8391454" object="true" symbol="GlanceView"/>
+<entry id="8389619" method="true" symbol="onSelect"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry id="4" module="true" symbol="globals/GlanceRez/Fonts"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry id="8390088" module="true" object="true" symbol="JsonData"/>
+<entry field="true" id="22" symbol="LauncherIcon"/>
+<entry id="8388610" symbol="statics"/>
+<entry id="8389350" module="true" symbol="globals"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry id="8390146" module="true" symbol="Background"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry field="true" id="18" symbol="gWichColor"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry id="8389347" symbol="color"/>
+<entry id="19" module="true" symbol="Layouts"/>
+<entry id="17" object="true" symbol="FlashlightView"/>
+<entry id="7" module="true" symbol="globals/GlanceRez/Strings"/>
+<entry id="10" module="true" symbol="globals/Rez/Fonts"/>
+<entry id="8391457" method="true" symbol="getGlanceView"/>
+<entry id="8388635" module="true" symbol="Application"/>
+</symbolTable>
+<localVars>
+<entry arg="true" endPc="268435688" name="dc" stackId="1" startPc="268435645"/>
+<entry arg="true" endPc="268435915" name="dc" stackId="1" startPc="268435734"/>
+<entry endPc="268435915" name="rez_cmp_local_text_1043131449" stackId="2" startPc="268435746"/>
+<entry arg="true" endPc="268436054" name="clickEvent" stackId="1" startPc="268435982"/>
+<entry arg="true" endPc="268436335" name="dc" stackId="1" startPc="268436168"/>
+<entry endPc="268436334" name="width" stackId="2" startPc="268436172"/>
+<entry endPc="268436334" name="height" stackId="3" startPc="268436172"/>
+<entry endPc="268436334" name="colorArray" stackId="4" startPc="268436172"/>
+<entry endPc="268436334" name="color" stackId="5" startPc="268436172"/>
+<entry arg="true" endPc="268436399" name="dc" stackId="1" startPc="268436360"/>
+</localVars>
+<annotations>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+<annotationEntry annotation="glance" class="FlashlightApp" module="globals" symbol="getGlanceView"/>
+<annotationEntry annotation="glance" class="FlashlightApp" module="globals" symbol="getInitialView"/>
+<annotationEntry annotation="glance" class="FlashlightApp" module="globals" symbol="onStop"/>
+<annotationEntry annotation="glance" class="Layouts" module="globals/GlanceRez" symbol="GlanceLayout"/>
+<annotationEntry annotation="glance" class="GlanceView" module="globals" symbol="onLayout"/>
+<annotationEntry annotation="glance" class="FlashlightApp" module="globals" symbol="initialize"/>
+<annotationEntry annotation="glance" class="FlashlightApp" module="globals" symbol="onStart"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+<annotationEntry annotation="glance" class="GlanceView" module="globals" symbol="initialize"/>
+</annotations>
+<dataEntryOffsetMappings>
+<dataEntry label="globals" offset="135" parentId="" symbolId="globals" type="module"/>
+<dataEntry label="globals/FlashlightApp" offset="238" parentId="globals" symbolId="FlashlightApp" type="class"/>
+<dataEntry label="globals/GlanceView" offset="317" parentId="globals" symbolId="GlanceView" type="class"/>
+<dataEntry label="globals/GlanceRez" offset="372" parentId="globals" symbolId="GlanceRez" type="module"/>
+<dataEntry label="globals/GlanceRez/Drawables" offset="443" parentId="GlanceRez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/GlanceRez/Layouts" offset="474" parentId="GlanceRez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/GlanceRez/Fonts" offset="513" parentId="GlanceRez" symbolId="Fonts" type="module"/>
+<dataEntry label="globals/GlanceRez/Strings" offset="544" parentId="GlanceRez" symbolId="Strings" type="module"/>
+<dataEntry label="globals/GlanceRez/JsonData" offset="575" parentId="GlanceRez" symbolId="JsonData" type="module"/>
+<dataEntry label="globals/FlashlightDelegate" offset="922" parentId="globals" symbolId="FlashlightDelegate" type="class"/>
+<dataEntry label="globals/FlashlightView" offset="985" parentId="globals" symbolId="FlashlightView" type="class"/>
+<dataEntry label="globals/Rez" offset="1040" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/Rez/Drawables" offset="1119" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="1158" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/Menus" offset="1197" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry label="globals/Rez/Fonts" offset="1228" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="1259" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry label="globals/Rez/JsonData" offset="1298" parentId="Rez" symbolId="JsonData" type="module"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" endPc="268435478" name="&lt;init&gt;" parent="FlashlightApp" startPc="268435460">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435481" name="onStart" parent="FlashlightApp" startPc="268435479">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435558" name="getInitialView" parent="FlashlightApp" startPc="268435482">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435579" name="initialize" parent="FlashlightApp" startPc="268435559">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435622" name="getGlanceView" parent="FlashlightApp" startPc="268435580">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435625" name="onStop" parent="FlashlightApp" startPc="268435623">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435644" name="&lt;init&gt;" parent="GlanceView" startPc="268435626">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435688" name="onLayout" parent="GlanceView" startPc="268435645">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435709" name="initialize" parent="GlanceView" startPc="268435689">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435733" name="&lt;init&gt;" parent="GlanceRez" startPc="268435710">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Fonts">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435915" name="GlanceLayout" parent="Layouts" startPc="268435734">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435941" name="getApp" startPc="268435916">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435960" name="&lt;init&gt;" parent="FlashlightDelegate" startPc="268435942">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435981" name="initialize" parent="FlashlightDelegate" startPc="268435961">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436054" name="onTap" parent="FlashlightDelegate" startPc="268435982">
+<param id="clickEvent"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436127" name="onSelect" parent="FlashlightDelegate" startPc="268436055">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436146" name="&lt;init&gt;" parent="FlashlightView" startPc="268436128">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436167" name="initialize" parent="FlashlightView" startPc="268436147">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436335" name="onUpdate" parent="FlashlightView" startPc="268436168">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436359" name="&lt;init&gt;" parent="Rez" startPc="268436336">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Menus">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Fonts">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436399" name="GlanceLayout" parent="Layouts" startPc="268436360">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>

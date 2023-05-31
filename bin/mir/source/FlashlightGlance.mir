@@ -1,0 +1,40 @@
+[ @file = "C:\Users\Sylvain\git\Flashlight\source\FlashlightGlance.mc"; @line = 1; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\Sylvain\git\Flashlight\source\FlashlightGlance.mc"; @line = 2; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\Sylvain\git\Flashlight\source\FlashlightGlance.mc"; @line = 4; glance = true; ]
+class GlanceView extends WatchUi.GlanceView{
+    [ @file = "C:\Users\Sylvain\git\Flashlight\source\FlashlightGlance.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Sylvain\git\Flashlight\source\FlashlightGlance.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Sylvain\git\Flashlight\source\FlashlightGlance.mc"; @line = 7; ]
+    function initialize() as Void {
+C_Users_Sylvain_git_Flashlight_source_FlashlightGlance_mc_7_26_start:
+[ "C:\Users\Sylvain\git\Flashlight\source\FlashlightGlance.mc" 8 8 ]
+        %tmp.2 = getv ? :GlanceView;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_Sylvain_git_Flashlight_source_FlashlightGlance_mc_7_26_stop:
+    }
+    [ @file = "C:\Users\Sylvain\git\Flashlight\source\FlashlightGlance.mc"; @line = 11; ]
+    function onLayout(dc) {
+C_Users_Sylvain_git_Flashlight_source_FlashlightGlance_mc_11_26_start:
+[ "C:\Users\Sylvain\git\Flashlight\source\FlashlightGlance.mc" 12 8 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        %tmp.4 = getv ? :Rez;
+        %tmp.5 = getv %tmp.4 :Layouts;
+        %tmp.6 = getv function %tmp.5 :GlanceLayout;
+        %tmp.8 = lgetv %dc;
+        %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
+        invoke %tmp.1 %tmp.2(%tmp.9);
+C_Users_Sylvain_git_Flashlight_source_FlashlightGlance_mc_11_26_stop:
+    }
+}
+[ @file = "C:\Users\Sylvain\git\Flashlight\source\FlashlightGlance.mc"; @line = 1; ]
+<init> {
+}

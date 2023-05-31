@@ -1,0 +1,84 @@
+[ @file = "C:\Users\Sylvain\git\Flashlight\source\FlashlightDelegate.mc"; @line = 1; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\Sylvain\git\Flashlight\source\FlashlightDelegate.mc"; @line = 3; ]
+class FlashlightDelegate extends WatchUi.BehaviorDelegate{
+    [ @file = "C:\Users\Sylvain\git\Flashlight\source\FlashlightDelegate.mc"; @line = 3; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Sylvain\git\Flashlight\source\FlashlightDelegate.mc"; @line = 3; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Sylvain\git\Flashlight\source\FlashlightDelegate.mc"; @line = 5; ]
+    function initialize() as Void {
+C_Users_Sylvain_git_Flashlight_source_FlashlightDelegate_mc_5_26_start:
+[ "C:\Users\Sylvain\git\Flashlight\source\FlashlightDelegate.mc" 6 8 ]
+        %tmp.2 = getv ? :BehaviorDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_Sylvain_git_Flashlight_source_FlashlightDelegate_mc_5_26_stop:
+    }
+    [ @file = "C:\Users\Sylvain\git\Flashlight\source\FlashlightDelegate.mc"; @line = 9; ]
+    function onSelect() {
+C_Users_Sylvain_git_Flashlight_source_FlashlightDelegate_mc_9_24_start:
+[ "C:\Users\Sylvain\git\Flashlight\source\FlashlightDelegate.mc" 10 8 ]
+        %tmp.3 = getv ? :gWichColor;
+        %tmp.4 = add %tmp.3 1;
+        putv self :gWichColor dup %tmp.4;
+[ "C:\Users\Sylvain\git\Flashlight\source\FlashlightDelegate.mc" 11 8 ]
+C_Users_Sylvain_git_Flashlight_source_FlashlightDelegate_mc_11_8_if_stmt:
+        %tmp.6 = getv ? :gWichColor;
+        %tmp.7 = 2;
+        %tmp.8 = gt %tmp.6 %tmp.7;
+        bf %tmp.8 @C_Users_Sylvain_git_Flashlight_source_FlashlightDelegate_mc_11_8_if_end;
+C_Users_Sylvain_git_Flashlight_source_FlashlightDelegate_mc_11_8_if_true:
+C_Users_Sylvain_git_Flashlight_source_FlashlightDelegate_mc_11_28_start:
+[ "C:\Users\Sylvain\git\Flashlight\source\FlashlightDelegate.mc" 12 12 ]
+        %tmp.9 = 0;
+        putv self :gWichColor %tmp.9;
+C_Users_Sylvain_git_Flashlight_source_FlashlightDelegate_mc_11_28_stop:
+        goto @C_Users_Sylvain_git_Flashlight_source_FlashlightDelegate_mc_11_8_if_end;
+C_Users_Sylvain_git_Flashlight_source_FlashlightDelegate_mc_11_8_if_end:
+[ "C:\Users\Sylvain\git\Flashlight\source\FlashlightDelegate.mc" 14 8 ]
+        %tmp.10 = getm $.Toybox.WatchUi;
+        %tmp.11 = getv function %tmp.10 :requestUpdate;
+        invoke %tmp.10 %tmp.11();
+[ "C:\Users\Sylvain\git\Flashlight\source\FlashlightDelegate.mc" 16 8 ]
+        %tmp.12 = true;
+        ret %tmp.12;
+C_Users_Sylvain_git_Flashlight_source_FlashlightDelegate_mc_9_24_stop:
+    }
+    [ @file = "C:\Users\Sylvain\git\Flashlight\source\FlashlightDelegate.mc"; @line = 19; ]
+    function onTap(clickEvent) {
+C_Users_Sylvain_git_Flashlight_source_FlashlightDelegate_mc_19_31_start:
+[ "C:\Users\Sylvain\git\Flashlight\source\FlashlightDelegate.mc" 20 8 ]
+        %tmp.3 = getv ? :gWichColor;
+        %tmp.4 = add %tmp.3 1;
+        putv self :gWichColor dup %tmp.4;
+[ "C:\Users\Sylvain\git\Flashlight\source\FlashlightDelegate.mc" 21 8 ]
+C_Users_Sylvain_git_Flashlight_source_FlashlightDelegate_mc_21_8_if_stmt:
+        %tmp.6 = getv ? :gWichColor;
+        %tmp.7 = 2;
+        %tmp.8 = gt %tmp.6 %tmp.7;
+        bf %tmp.8 @C_Users_Sylvain_git_Flashlight_source_FlashlightDelegate_mc_21_8_if_end;
+C_Users_Sylvain_git_Flashlight_source_FlashlightDelegate_mc_21_8_if_true:
+C_Users_Sylvain_git_Flashlight_source_FlashlightDelegate_mc_21_28_start:
+[ "C:\Users\Sylvain\git\Flashlight\source\FlashlightDelegate.mc" 22 12 ]
+        %tmp.9 = 0;
+        putv self :gWichColor %tmp.9;
+C_Users_Sylvain_git_Flashlight_source_FlashlightDelegate_mc_21_28_stop:
+        goto @C_Users_Sylvain_git_Flashlight_source_FlashlightDelegate_mc_21_8_if_end;
+C_Users_Sylvain_git_Flashlight_source_FlashlightDelegate_mc_21_8_if_end:
+[ "C:\Users\Sylvain\git\Flashlight\source\FlashlightDelegate.mc" 24 8 ]
+        %tmp.10 = getm $.Toybox.WatchUi;
+        %tmp.11 = getv function %tmp.10 :requestUpdate;
+        invoke %tmp.10 %tmp.11();
+[ "C:\Users\Sylvain\git\Flashlight\source\FlashlightDelegate.mc" 26 8 ]
+        %tmp.12 = true;
+        ret %tmp.12;
+C_Users_Sylvain_git_Flashlight_source_FlashlightDelegate_mc_19_31_stop:
+    }
+}
+[ @file = "C:\Users\Sylvain\git\Flashlight\source\FlashlightDelegate.mc"; @line = 1; ]
+<init> {
+}
