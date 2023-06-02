@@ -1,0 +1,1 @@
+{"complications":[{"ciqId":{"id":0,"devicePartNumber":"006-B3703-00"},"icon":"4ff404a3.png","title":"longComplicationLabel","defaultLayoutId":0,"layouts":[{"id":0,"iconContent":"4ff404a3.svg","iconPosition":"left","textDefault":"AppName","textPosition":"right"}]}],"strings":{"default":{"longComplicationLabel":"Flashlight","AppName":"Flashlight"}}}

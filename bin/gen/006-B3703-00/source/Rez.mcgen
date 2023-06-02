@@ -17,9 +17,9 @@ module GlanceRez {
 
     module Layouts {
         function GlanceLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_text_1043131449 = new WatchUi.Text({:color=>Gfx.COLOR_WHITE, :locX=>(dc.getWidth() * 0.5), :locY=>((dc.getHeight() - dc.getFontHeight(Graphics.FONT_SMALL)) * 0.5), :text=>"Flashlight", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_SMALL});
+            var rez_cmp_local_text_1274766243 = new WatchUi.Text({:color=>Gfx.COLOR_WHITE, :locX=>0, :locY=>((dc.getHeight() - dc.getFontHeight(Graphics.FONT_SMALL)) * 0.5), :text=>"Flashlight", :justification=>Gfx.TEXT_JUSTIFY_LEFT, :font=>Graphics.FONT_SMALL});
 
-            return [rez_cmp_local_text_1043131449] as Array<WatchUi.Drawable>;
+            return [rez_cmp_local_text_1274766243] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 
@@ -568,6 +568,7 @@ module GlanceRez {
 module Rez {
     module Drawables {
         (:initialized) var LauncherIcon as Symbol;
+        (:initialized) var ComplicationIcon as Symbol;
     } // Drawables
 
     module Fonts {
@@ -586,6 +587,8 @@ module Rez {
     } // Menus
 
     module Strings {
+        (:initialized) var longComplicationLabel as Symbol;
+        (:initialized) var shortComplicationLabel as Symbol;
         (:initialized) var AppName as Symbol;
     } // Strings
 

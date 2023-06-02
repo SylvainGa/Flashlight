@@ -1,3 +1,5 @@
 <strings>
     <string id="AppName">Flashlight</string>
+    <string id="shortComplicationLabel">FL</string>
+    <string id="longComplicationLabel">Flashlight</string>
 </strings>
