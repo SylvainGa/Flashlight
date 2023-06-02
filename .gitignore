@@ -1,0 +1,11 @@
+.project
+.settings/
+bin/
+*.bak
+.DS_Store
+bin/Flashlight.prg
+bin/Flashlight.prg.debug.xml
+bin/gen/006-B3703-00/source/Rez.mcgen
+bin/internal-mir/Rez.mir
+bin/mir/source/FlashlightApp.mir
+bin/Flashlight.prg
