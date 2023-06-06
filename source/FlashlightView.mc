@@ -33,7 +33,21 @@ class FlashlightView extends WatchUi.View {
 
         if (Toybox has :Attention && Attention has :backlight) {
             var intensityArray = [0.3, 0.7, 1.0];
-            Attention.backlight(intensityArray[gWichColor]);
+            var failed = false;
+            try {
+                Attention.backlight(intensityArray[gWichColor]);
+            }
+            catch (e) {
+                failed = true;
+            }
+
+            // If we fail, try the older method
+            if (failed) {
+                try {
+                    Attention.backlight(true);
+                }
+                catch (e) {} // If that one fails, don't crash.
+            }
         }
 
 		var width = dc.getWidth();
