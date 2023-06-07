@@ -18,6 +18,16 @@ class FlashlightDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function onSelect() {
+        gWichIntensity++;
+        if (gWichIntensity > 2) {
+            gWichIntensity = 0;
+        }
+        WatchUi.requestUpdate();
+
+        return true;
+    }
+
+    function onNextPage() {
         gWichColor++;
         if (gWichColor > 2) {
             gWichColor = 0;
@@ -27,13 +37,33 @@ class FlashlightDelegate extends WatchUi.BehaviorDelegate {
         return true;
     }
 
-    function onTap(clickEvent) {
-        gWichColor++;
-        if (gWichColor > 2) {
-            gWichColor = 0;
-        }
+    function onPreviousPage() {
+        gWichMode = (gWichMode + 1) & 1;
+
         WatchUi.requestUpdate();
 
         return true;
+    }
+
+    function onTap(clickEvent) {
+        onSelect();
+        return true;
+    }
+
+    function onSwipe(swipeEvent) {
+        var dir = swipeEvent.getDirection();
+
+        switch (dir) {
+            case WatchUi.SWIPE_UP:
+                onNextPage();
+                return true;
+            
+            case WatchUi.SWIPE_DOWN:
+                onPreviousPage();
+                return true;
+            
+            default:
+                return false;
+        }
     }
 }
