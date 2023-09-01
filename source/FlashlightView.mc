@@ -70,6 +70,14 @@ class FlashlightView extends WatchUi.View {
                 colorArray = [Graphics.COLOR_DK_GREEN, Graphics.COLOR_GREEN];
                 gWichIntensity &= 1;
                 break;
+            case 3:
+                colorArray = [Graphics.COLOR_DK_BLUE, Graphics.COLOR_BLUE];
+                gWichIntensity &= 1;
+                break;
+            case 4:
+                colorArray = [Graphics.COLOR_ORANGE, Graphics.COLOR_YELLOW];
+                gWichIntensity &= 1;
+                break;
         }
         var color = colorArray[gWichIntensity];
 

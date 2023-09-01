@@ -29,7 +29,7 @@ class FlashlightDelegate extends WatchUi.BehaviorDelegate {
 
     function onNextPage() {
         gWichColor++;
-        if (gWichColor > 2) {
+        if (gWichColor > 4) {
             gWichColor = 0;
         }
         WatchUi.requestUpdate();
