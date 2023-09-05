@@ -1,10 +1,12 @@
 import Toybox.Graphics;
 import Toybox.WatchUi;
 import Toybox.Attention;
+using Toybox.Application.Storage;
 
 var gWichIntensity = 0;
 var gWichMode = 0;
 var gWichColor = 0;
+var gDelayChanged = false;
 
 class FlashlightView extends WatchUi.View {
 
@@ -84,5 +86,13 @@ class FlashlightView extends WatchUi.View {
         dc.setColor(color, Graphics.COLOR_BLACK);
         dc.clear();
         dc.fillRectangle(0, 0, width, height);
+
+        if (gDelayChanged) {
+            gDelayChanged = false;
+            dc.setColor(Graphics.COLOR_BLACK, color);
+			var waitLaunch = Storage.getValue("waitLaunch");
+            var text = "Delay " + (waitLaunch ? "On" : "Off");
+            dc.drawText(width / 2, height / 2, Graphics.FONT_MEDIUM, text, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        }
     }
 }

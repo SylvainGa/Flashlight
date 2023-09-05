@@ -1,5 +1,7 @@
 import Toybox.WatchUi;
 import Toybox.Timer;
+import Toybox.Attention;
+using Toybox.Application.Storage;
 
 class FlashlightDelegate extends WatchUi.BehaviorDelegate {
     var timer;
@@ -65,5 +67,26 @@ class FlashlightDelegate extends WatchUi.BehaviorDelegate {
             default:
                 return false;
         }
+    }
+
+    function onHold(click) {
+        onMenu();
+    }
+
+    function onMenu() {
+        if (Attention has :vibrate) {
+            var vibeData = [ new Attention.VibeProfile(50, 200) ]; // On for half a second
+            Attention.vibrate(vibeData);
+        }
+
+        var waitLaunch = Storage.getValue("waitLaunch");
+        if (waitLaunch == null) {
+            waitLaunch = true;
+        }
+
+        waitLaunch = !waitLaunch;
+
+        Storage.setValue("waitLaunch", waitLaunch);
+        gDelayChanged = true;
     }
 }
