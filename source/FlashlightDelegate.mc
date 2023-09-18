@@ -24,6 +24,8 @@ class FlashlightDelegate extends WatchUi.BehaviorDelegate {
         if (gWichIntensity > 2) {
             gWichIntensity = 0;
         }
+        Storage.setValue("wichIntensity", gWichIntensity);
+
         WatchUi.requestUpdate();
 
         return true;
@@ -34,6 +36,8 @@ class FlashlightDelegate extends WatchUi.BehaviorDelegate {
         if (gWichColor > 4) {
             gWichColor = 0;
         }
+        Storage.setValue("wichColor", gWichColor);
+
         WatchUi.requestUpdate();
 
         return true;
@@ -41,6 +45,7 @@ class FlashlightDelegate extends WatchUi.BehaviorDelegate {
 
     function onPreviousPage() {
         gWichMode = (gWichMode + 1) & 1;
+        Storage.setValue("wichMode", gWichMode);
 
         WatchUi.requestUpdate();
 

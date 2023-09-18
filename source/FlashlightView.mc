@@ -12,6 +12,19 @@ class FlashlightView extends WatchUi.View {
 
     function initialize() {
         View.initialize();
+
+        gWichIntensity = Storage.getValue("wichIntensity");
+        if (gWichIntensity == null) {
+            gWichIntensity = 0;
+        }
+        gWichMode = Storage.getValue("whichMode");
+        if (gWichMode == null) {
+            gWichMode = 0;
+        }
+        gWichColor = Storage.getValue("wichColor");
+        if (gWichColor == null) {
+            gWichColor = 0;
+        }
     }
 
     function onHide() {
