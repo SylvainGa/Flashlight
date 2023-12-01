@@ -31,6 +31,10 @@ class FlashlightView extends WatchUi.View {
         if (Toybox has :Attention && Attention has :setFlashlightMode) {
             Attention.setFlashlightMode(Attention.FLASHLIGHT_MODE_OFF, null);
         }
+
+        if (Toybox has :Attention && Attention has :backlight) {
+            Attention.backlight(true);
+        }
     }
 
     // Update the view
@@ -42,12 +46,14 @@ class FlashlightView extends WatchUi.View {
             var intensityArray = [Attention.FLASHLIGHT_BRIGHTNESS_LOW, Attention.FLASHLIGHT_BRIGHTNESS_MEDIUM, Attention.FLASHLIGHT_BRIGHTNESS_HIGH];
             var colorArray = [Attention.FLASHLIGHT_COLOR_WHITE, Attention.FLASHLIGHT_COLOR_RED, Attention.FLASHLIGHT_COLOR_GREEN];
             var modeArray = [Attention.FLASHLIGHT_MODE_ON, Attention.FLASHLIGHT_MODE_STROBE];
+            if (gWichColor > 2) {
+                gWichColor = 0; // Reset to white if we overflew over our array size
+            }
             if (Attention.hasFlashlightColor(colorArray[gWichColor])) {
                 var result = Attention.setFlashlightMode(modeArray[gWichMode], {:color => colorArray[gWichColor], :brightness => intensityArray[gWichIntensity]});
-                if (result == Attention.FLASHLIGHT_RESULT_SUCCESS) {
-                    return;
-                }
             }
+
+            return;
         }
 
         if (Toybox has :Attention && Attention has :backlight) {
