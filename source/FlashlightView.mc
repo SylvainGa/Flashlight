@@ -42,7 +42,9 @@ class FlashlightView extends WatchUi.View {
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
 
-        if (Toybox has :Attention && Attention has :hasFlashlightColor && Attention has :setFlashlightMode) {
+        var useScreen = $.getProperty("useScreen", 2, method(:validateNumber));
+
+        if (Toybox has :Attention && Attention has :hasFlashlightColor && Attention has :setFlashlightMode && (useScreen & 2)) {
             var intensityArray = [Attention.FLASHLIGHT_BRIGHTNESS_LOW, Attention.FLASHLIGHT_BRIGHTNESS_MEDIUM, Attention.FLASHLIGHT_BRIGHTNESS_HIGH];
             var colorArray = [Attention.FLASHLIGHT_COLOR_WHITE, Attention.FLASHLIGHT_COLOR_RED, Attention.FLASHLIGHT_COLOR_GREEN];
             var modeArray = [Attention.FLASHLIGHT_MODE_ON, Attention.FLASHLIGHT_MODE_STROBE];
@@ -52,59 +54,64 @@ class FlashlightView extends WatchUi.View {
             if (Attention.hasFlashlightColor(colorArray[gWichColor])) {
                 var result = Attention.setFlashlightMode(modeArray[gWichMode], {:color => colorArray[gWichColor], :brightness => intensityArray[gWichIntensity]});
             }
-
-            return;
+        }
+        else {
+            useScreen = 1;
         }
 
-        if (Toybox has :Attention && Attention has :backlight) {
-            var intensityArray = [0.3, 0.7, 1.0];
-            var failed = false;
-            try {
-                Attention.backlight(intensityArray[gWichIntensity]);
-            }
-            catch (e) {
-                failed = true;
-            }
+        if (useScreen & 1) {
+            if (Toybox has :Attention && Attention has :backlight) {
+                var maxPower = $.getProperty("maxPower", 10, method(:validateNumber)) / 10.0;
+                var intensityArray = [maxPower / 3.0, (maxPower * 2.0) / 3.0, maxPower];
+                var failed = false;
 
-            // If we fail, try the older method (although we might have failed because we were on for too long)
-            if (failed) {
                 try {
-                    Attention.backlight(true);
+                    Attention.backlight(intensityArray[gWichIntensity]);
                 }
-                catch (e) {} // If that one fails, don't crash.
+                catch (e) {
+                    failed = true;
+                }
+
+                // If we fail, try the older method (although we might have failed because we were on for too long)
+                if (failed) {
+                    try {
+                        Attention.backlight(true);
+                    }
+                    catch (e) {} // If that one fails, don't crash.
+                }
             }
+
+            var width = dc.getWidth();
+            var height = dc.getHeight();
+            var colorArray;
+
+            switch (gWichColor) {
+                case 0:
+                    colorArray = [Graphics.COLOR_DK_GRAY, Graphics.COLOR_LT_GRAY, Graphics.COLOR_WHITE];
+                    break;
+                case 1:
+                    colorArray = [Graphics.COLOR_DK_RED, Graphics.COLOR_RED];
+                    gWichIntensity &= 1;
+                    break;
+                case 2:
+                    colorArray = [Graphics.COLOR_DK_GREEN, Graphics.COLOR_GREEN];
+                    gWichIntensity &= 1;
+                    break;
+                case 3:
+                    colorArray = [Graphics.COLOR_DK_BLUE, Graphics.COLOR_BLUE];
+                    gWichIntensity &= 1;
+                    break;
+                case 4:
+                    colorArray = [Graphics.COLOR_ORANGE, Graphics.COLOR_YELLOW];
+                    gWichIntensity &= 1;
+                    break;
+            }
+            var color = colorArray[gWichIntensity];
+
+            dc.setColor(color, Graphics.COLOR_BLACK);
+            dc.clear();
+            dc.fillRectangle(0, 0, width, height);
         }
-
-		var width = dc.getWidth();
-		var height = dc.getHeight();
-        var colorArray;
-
-        switch (gWichColor) {
-            case 0:
-                colorArray = [Graphics.COLOR_DK_GRAY, Graphics.COLOR_LT_GRAY, Graphics.COLOR_WHITE];
-                break;
-            case 1:
-                colorArray = [Graphics.COLOR_DK_RED, Graphics.COLOR_RED];
-                gWichIntensity &= 1;
-                break;
-            case 2:
-                colorArray = [Graphics.COLOR_DK_GREEN, Graphics.COLOR_GREEN];
-                gWichIntensity &= 1;
-                break;
-            case 3:
-                colorArray = [Graphics.COLOR_DK_BLUE, Graphics.COLOR_BLUE];
-                gWichIntensity &= 1;
-                break;
-            case 4:
-                colorArray = [Graphics.COLOR_ORANGE, Graphics.COLOR_YELLOW];
-                gWichIntensity &= 1;
-                break;
-        }
-        var color = colorArray[gWichIntensity];
-
-        dc.setColor(color, Graphics.COLOR_BLACK);
-        dc.clear();
-        dc.fillRectangle(0, 0, width, height);
 
         if (gDelayChanged) {
             gDelayChanged = false;

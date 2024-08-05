@@ -29,6 +29,8 @@
             <iq:product id="descentmk1"/>
             <iq:product id="descentmk2"/>
             <iq:product id="descentmk2s"/>
+            <iq:product id="descentmk343mm"/>
+            <iq:product id="descentmk351mm"/>
             <iq:product id="epix2"/>
             <iq:product id="epix2pro42mm"/>
             <iq:product id="epix2pro47mm"/>
@@ -51,6 +53,8 @@
             <iq:product id="fenix7x"/>
             <iq:product id="fenix7xpro"/>
             <iq:product id="fenixchronos"/>
+            <iq:product id="fr165"/>
+            <iq:product id="fr165m"/>
             <iq:product id="fr245"/>
             <iq:product id="fr245m"/>
             <iq:product id="fr255"/>
@@ -117,7 +121,10 @@
             Use "Monkey C: Edit Languages" from the Visual Studio Code command
             palette to edit your compatible language list.
         -->
-        <iq:languages/>
+        <iq:languages>
+            <iq:language>eng</iq:language>
+            <iq:language>fre</iq:language>
+        </iq:languages>
         <!--
             Use "Monkey C: Configure Monkey Barrel" from the Visual Studio Code
             command palette to edit the included barrels.

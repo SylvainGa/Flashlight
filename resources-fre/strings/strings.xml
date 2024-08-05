@@ -1,0 +1,10 @@
+<strings>
+    <string id="AppName">Lampe de poche</string>
+    <string id="shortComplicationLabel">FL</string>
+    <string id="longComplicationLabel">Flashlight</string>
+    <string id="maxPower">Puissance maximum de l'écran (1 à 10)</string>
+    <string id="useScreen">Quelle méthode</string>
+    <string id="screen">Écran</string>
+    <string id="flashlight">Lampe de poche</string>
+    <string id="both">Les deux</string>
+</strings>

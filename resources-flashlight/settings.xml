@@ -1,0 +1,9 @@
+<settings>
+    <setting propertyKey="@Properties.useScreen" title="@Strings.useScreen">
+        <settingConfig type="list">
+            <listEntry value="1">@Strings.screen</listEntry>
+            <listEntry value="2">@Strings.flashlight</listEntry>
+            <listEntry value="3">@Strings.both</listEntry>
+        </settingConfig>
+    </setting>
+</settings>
