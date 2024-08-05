@@ -24,6 +24,11 @@ If you use a different watch face that supports launching custom (CIQ) Complicat
 WARNING: Keeping the backlight on will drain the battery and according to Garmin, an AMOLED display could get burn in damage if it stays on for too long (https://developer.garmin.com/connect-iq/core-topics/getting-the-users-attention/#Flashlight), so use sporadically and at your own risk.
 
 ## Changelog
+V1.6.0 Adds the following
+- The ability to select flashlight or screen on those that also have a flashlight
+- Setting to limit the power usage of the screen backlight
+- Compiled with CIQ 6.4.2 since 7.x has issues with custom complications
+
 V1.5.4 Removed devices that do not support the Storage module and shouldn't have been included in the first place. This module was implemented in CIQ 2.4.0, so it's really old watches that are dropped, unfortunately, These are: the first VívoActive, the Forerunner 230/235/630/920XT, the D2 Bravo/Titanium, The Fēnix 3/Fēnix 3 HR/Tactix Bravo/Quatix 3 and the Oregon 7 Series.
 
 V1.5.3 Fixes the backlight staying full bright on exit
