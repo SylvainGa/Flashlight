@@ -1,5 +1,6 @@
 using Toybox.WatchUi as Ui;
 using Toybox.Application.Storage;
+using Toybox.Application.Properties;
 using Toybox.Timer;
 
 class FlashlightIntermediateView extends Ui.View {
@@ -12,16 +13,12 @@ class FlashlightIntermediateView extends Ui.View {
     public function onShow() as Void {
 
 		if (!_shown) {
-			var waitLaunch = Storage.getValue("waitLaunch");
-			if (waitLaunch == null) {
-				waitLaunch = true;
-				Storage.setValue("waitLaunch", true);
-			}
+			var waitLaunch = $.getProperty("waitLaunch", 0, method(:validateNumber));
 
-			if (waitLaunch) {
+			if (waitLaunch > 0) {
 				var timer;
 				timer = new Timer.Timer();
-				timer.start(method(:viewTimer), 1000, false);
+				timer.start(method(:viewTimer), waitLaunch, false);
 			}
 			else {
 				viewTimer();

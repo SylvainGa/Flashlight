@@ -8,4 +8,5 @@
     <string id="screen">Screen</string>
     <string id="flashlight">Flashlight</string>
     <string id="both">Both</string>
+    <string id="waitLaunch">Delay in msec before launching the flashlight view</string>
 </strings>

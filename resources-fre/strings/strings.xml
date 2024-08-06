@@ -7,4 +7,5 @@
     <string id="screen">Écran</string>
     <string id="flashlight">Lampe de poche</string>
     <string id="both">Les deux</string>
+    <string id="waitLaunch">Délaie en msec avant de lancer la vue de la lampe de poche</string>
 </strings>

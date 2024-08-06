@@ -73,25 +73,4 @@ class FlashlightDelegate extends WatchUi.BehaviorDelegate {
                 return false;
         }
     }
-
-    function onHold(click) {
-        onMenu();
-    }
-
-    function onMenu() {
-        if (Attention has :vibrate) {
-            var vibeData = [ new Attention.VibeProfile(50, 200) ]; // On for half a second
-            Attention.vibrate(vibeData);
-        }
-
-        var waitLaunch = Storage.getValue("waitLaunch");
-        if (waitLaunch == null) {
-            waitLaunch = true;
-        }
-
-        waitLaunch = !waitLaunch;
-
-        Storage.setValue("waitLaunch", waitLaunch);
-        gDelayChanged = true;
-    }
 }
