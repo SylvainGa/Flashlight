@@ -1,6 +1,6 @@
 <strings>
     <string id="AppName">Flashlight</string>
-    <string id="AppNameVersion">Version 1.6.0</string>
+    <string id="AppNameVersion">Version 1.6.1</string>
     <string id="shortComplicationLabel">FL</string>
     <string id="longComplicationLabel">Flashlight</string>
     <string id="maxPower">Max screen power to increase to (1 to 10)</string>
