@@ -32,7 +32,9 @@ class FlashlightView extends WatchUi.View {
         }
 
         if (Toybox has :Attention && Attention has :backlight) {
-            Attention.backlight(true);
+            try {
+                Attention.backlight(true);
+            } catch (e) {}
         }
     }
 

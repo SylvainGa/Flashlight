@@ -24,6 +24,8 @@ If you use a different watch face that supports launching custom (CIQ) Complicat
 WARNING: Keeping the backlight on will drain the battery and according to Garmin, an AMOLED display could get burn in damage if it stays on for too long (https://developer.garmin.com/connect-iq/core-topics/getting-the-users-attention/#Flashlight), so use sporadically and at your own risk.
 
 ## Changelog
+V1.6.2 Compiled with CIQ 7.4.3. Fixed a crash when an AMOLED watch reaches their maximum on time and the app shuts down.
+
 V1.6.1 Compiled with CIQ 7.3.0. Added Enduro3 and new Fenix8 watches.
 
 V1.6.0 This version now has parameters (settable from your phone ConnectIQ app) to configure the flashlight
